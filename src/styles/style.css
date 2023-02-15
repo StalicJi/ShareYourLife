@@ -1,0 +1,496 @@
+.top {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(227, 227, 227);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  z-index: 999;
+}
+.top .topLeft {
+  flex: 3;
+  display: flex;
+  font-size: 30px;
+  margin-left: 100px;
+  font-weight: 800;
+  justify-content: center;
+  font-family: "Shadows Into Light", cursive;
+}
+.top .topCenter {
+  flex: 7;
+}
+.top .topCenter .topList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.top .topCenter .topList .topListItem {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.top .topRight {
+  flex: 4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.top .topRight .topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.top .topRight .topSearchIcon {
+  font-size: 25px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header .headerTitle .headerImg {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+
+.sidebar {
+  flex: 3;
+  margin: 20px;
+  padding-bottom: 30px;
+  background-color: #fdfbfb;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .sidebarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .sidebarItem .sidebarTitle {
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  border-top: 1px solid #a7a4a4;
+  border-bottom: 1px solid #a7a4a4;
+  text-align: center;
+}
+.sidebar .sidebarItem .sidebarImg {
+  margin-top: 15px;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sidebar .sidebarItem p {
+  padding: 30px;
+}
+.sidebar .sidebarItem .sidebarList {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.sidebar .sidebarItem .sidebarList .sidebarListItem {
+  display: inline-block;
+  width: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+.sidebar .sidebarItem .sidebarSocial {
+  margin-top: 15px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.sidebar .sidebarItem .sidebarSocial .sidebarItem {
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post {
+  width: 385px;
+  margin: 0 25px 40px 25px;
+}
+.post .postImg {
+  width: 100%;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+}
+.post .postInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post .postInfo .postCats .postCat {
+  font-size: 11px;
+  color: #be9656;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.post .postInfo .postTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.post .postInfo .postDate {
+  font-size: 13px;
+  font-style: italic;
+  color: #999;
+  margin-top: 15px;
+}
+.post .postDesc {
+  font-size: 14px;
+  color: #444;
+  line-height: 24px;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.home {
+  display: flex;
+}
+
+.posts {
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.single {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.singlePost {
+  flex: 9;
+}
+.singlePost .singlePostWrapper {
+  padding: 20px;
+  padding-right: 0;
+}
+.singlePost .singlePostWrapper .singlePostImg {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.singlePost .singlePostWrapper .singoPostTitle {
+  text-align: center;
+  margin: 10px;
+  font-size: 35px;
+}
+.singlePost .singlePostWrapper .singoPostTitle .singlePostEdit {
+  float: right;
+  font-size: 20px;
+  padding-top: 5px;
+}
+.singlePost .singlePostWrapper .singoPostTitle .singlePostEdit .singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.singlePost .singlePostWrapper .singoPostTitle .singlePostEdit .singlePostIcon:first-child {
+  color: teal;
+}
+.singlePost .singlePostWrapper .singoPostTitle .singlePostEdit .singlePostIcon:last-child {
+  color: tomato;
+}
+.singlePost .singlePostWrapper .singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #b39656;
+}
+.singlePost .singlePostWrapper .singlePostDesc {
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+}
+.singlePost .singlePostWrapper .singlePostDesc::first-letter {
+  margin-left: 20px;
+}
+
+.write {
+  padding-top: 50px;
+}
+.write .writeImg {
+  margin-left: 150px;
+  width: 70vw;
+  height: 250px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.write .writeForm {
+  position: relative;
+}
+.write .writeForm .writeFormGroup {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}
+.write .writeForm .writeFormGroup .writeIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: rgb(117, 117, 117);
+  cursor: pointer;
+}
+.write .writeForm .writeFormGroup .writeInput {
+  font-size: 30px;
+  padding: 20px;
+  width: 70vw;
+  border: none;
+  background-color: rgb(227, 227, 227);
+}
+.write .writeForm .writeFormGroup .writeInput:focus {
+  outline: none;
+}
+.write .writeForm .writeFormGroup .writeText {
+  font-size: 20px;
+  height: 100vh;
+}
+.write .writeForm .writeSubmit {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.settings {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.settings .settingsWrapper {
+  flex: 9;
+}
+.settings .settingsWrapper .settingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings .settingsWrapper .settingsTitle .settingsUpdateTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgb(0, 38, 141);
+}
+.settings .settingsWrapper .settingsTitle .settingsDeleteTitle {
+  font-size: 12px;
+  cursor: pointer;
+  color: red;
+}
+.settings .settingsWrapper .settingsForm {
+  display: flex;
+  flex-direction: column;
+}
+.settings .settingsWrapper .settingsForm label {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.settings .settingsWrapper .settingsForm input {
+  margin-top: 10px 0;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: rgb(227, 227, 227);
+  outline: none;
+}
+.settings .settingsWrapper .settingsForm .settingSubmit {
+  width: 150px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.settings .settingsWrapper .settingsForm .settingsPP {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.settings .settingsWrapper .settingsForm .settingsPP img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.settings .settingsWrapper .settingsForm .settingsPP .settingsPPIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: rgb(93, 131, 235);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.login {
+  height: calc(100vh - 50px);
+  padding-right: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+}
+.login .loginTitle {
+  font-size: 50px;
+}
+.login .loginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.login .loginForm label {
+  margin: 10px 0;
+  font-size: 30px;
+}
+.login .loginForm .loginInput {
+  padding: 10px;
+  background-color: rgb(232, 232, 232);
+  border: none;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+}
+.login .loginForm .loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: #6096b4;
+  padding: 10px;
+  height: 50px;
+  font-size: 20px;
+}
+.login .loginRegisterButton {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: #b4607b;
+  height: 50px;
+  font-size: 20px;
+}
+
+.register {
+  height: calc(100vh - 50px);
+  padding-right: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://images.pexels.com/photos/5797997/pexels-photo-5797997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+}
+.register .registerTitle {
+  font-size: 50px;
+}
+.register .registerForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.register .registerForm label {
+  margin: 10px 0;
+  font-size: 30px;
+}
+.register .registerForm .registerInput {
+  padding: 10px;
+  background-color: rgb(232, 232, 232);
+  border: none;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+}
+.register .registerForm .registerButton {
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: #6096b4;
+  padding: 10px;
+  height: 50px;
+  font-size: 20px;
+}
+.register .registerLoginButton {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: #b4607b;
+  height: 50px;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: rgb(227, 227, 227);
+}/*# sourceMappingURL=style.css.map */
