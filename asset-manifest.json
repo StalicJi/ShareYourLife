@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ShareYourLife/static/css/main.5bca2aad.css",
+    "main.js": "/ShareYourLife/static/js/main.3b54a57a.js",
+    "index.html": "/ShareYourLife/index.html",
+    "main.5bca2aad.css.map": "/ShareYourLife/static/css/main.5bca2aad.css.map",
+    "main.3b54a57a.js.map": "/ShareYourLife/static/js/main.3b54a57a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bca2aad.css",
+    "static/js/main.3b54a57a.js"
+  ]
+}
